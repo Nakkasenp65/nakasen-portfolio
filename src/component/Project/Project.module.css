@@ -1,0 +1,105 @@
+.wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+.date {
+  font-size: 0.75rem;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  gap: 8px;
+  overflow-x: hidden;
+  width: 100%;
+  height: 9rem;
+
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 55px 55px;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectEmpty {
+  color: #fff;
+}
+
+.description {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.techStack {
+  display: flex;
+  gap: 8px;
+}
+
+.techIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--fg);
+}
+
+.wrapperMore {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.readMore {
+  padding: 0.5rem 0.75rem;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+.readMore:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.border {
+  border-radius: 0.5rem;
+  padding: 3rem 1rem;
+  border: 1px solid var(--border);
+}
+
+.paragraph {
+  display: flex;
+  text-indent: 24px;
+}
+
+.indentation {
+  width: 10px;
+  height: 1px;
+  background: #000;
+}

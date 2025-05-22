@@ -1,0 +1,62 @@
+.wrapper {
+  margin-top: 1.5rem;
+  padding: 3rem 0.5rem;
+  border-radius: 0.5rem;
+  flex: 1;
+  display: flex;
+  min-width: 16rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  border: 1px solid var(--border);
+  height: max-content;
+}
+
+.text {
+  width: max-content;
+}
+
+.profilePictureWrapper {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePicture {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.resume {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+.download {
+  color: var(--fg);
+  transition: ease-in-out 0.2s;
+}
+
+.download:hover {
+  scale: 1.02;
+  transition: ease-in-out 0.2s;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin-top: 0;
+  }
+}

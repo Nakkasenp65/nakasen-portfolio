@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.themeSwitcher {
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid var(--fg);
+  cursor: pointer;
+}
+
+.header {
+  color: var(--fg);
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
