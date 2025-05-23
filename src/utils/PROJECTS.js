@@ -41,7 +41,8 @@ export const PROJECTS = [
       "Built a face recognition system in Python to manage class attendance. Integrated with Firebase Firestore to handle real-time data syncing. Project was experimental and not actively deployed.",
     techStack: ["Python", "OpenCV", "Firebase Firestore"],
     projectDemoLink: "",
-    sourceCode: "https://github.com/Nakkasenp65/Python-face-recognition",
+    sourceCode:
+      "https://github.com/Nakkasenp65/face-recognition-attendance.git",
   },
   {
     id: "project-5",
