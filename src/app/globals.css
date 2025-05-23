@@ -4,7 +4,6 @@
   font-style: normal;
 }
 
-:root,
 body.light {
   --bg: #ffffff;
   --border: #c5c5c5;
@@ -13,6 +12,7 @@ body.light {
   --error: #ff0000;
 }
 
+:root,
 body.dark {
   --bg: #111111;
   --border: #313131;
@@ -23,7 +23,6 @@ body.dark {
 
 html,
 body {
-  transition: cubic-bezier(0.2, 1, 0.7, 1) 1s;
   max-width: 100vw;
   overflow-x: hidden;
   background: var(--bg);
@@ -90,7 +89,7 @@ p {
     font-size: 1rem;
   }
   h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1.5rem;
@@ -106,15 +105,15 @@ p {
 /* PC Styles (min-width: 1024px) */
 @media (min-width: 1024px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   h3 {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
   h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }

@@ -2,7 +2,6 @@ import { PROJECTS } from "@/utils/PROJECTS";
 import Project from "../Project/Project";
 
 import s from "./Collection.module.css";
-import AboutMe from "../AboutMe/AboutMe";
 export default function Collection() {
   return (
     <div className={s.wrapper}>
@@ -17,6 +16,7 @@ export default function Collection() {
             name={project.name}
             description={project.description}
             techStack={project.techStack}
+            projectDemoLink={project.projectDemoLink}
           />
         ))}
       </div>

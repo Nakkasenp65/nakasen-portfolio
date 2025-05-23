@@ -1,13 +1,17 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 import {
   IoArrowBack,
   IoArrowForward,
   IoCalendarOutline,
   IoCodeSlash,
 } from "react-icons/io5";
-import { PROJECTS } from "@/utils/PROJECTS"; // Adjust path as needed
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+import { PROJECTS } from "@/utils/PROJECTS";
+import { useSwipeable } from "react-swipeable";
 import Container from "@/component/Container/Container";
 import styles from "./Project.module.css";
 
@@ -52,6 +56,12 @@ export default function Project() {
     );
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: handleNextImage,
+    onSwipedRight: handlePrevImage,
+    trackMouse: true, // allows desktop dragging too
+  });
+
   return (
     <Container>
       <div className={styles.wrapper}>
@@ -73,10 +83,11 @@ export default function Project() {
         {/* Image Gallery */}
         <section className={styles.imageSection}>
           {project.imageLink[0] && (
-            <div className={styles.imageContainer}>
-              <img
-                src={`/projects/${project.imageLink[currentImageIndex]}.webp`} // Adjust extension as needed
+            <div className={styles.imageContainer} {...handlers}>
+              <Image
+                src={`/projects/${project.imageLink[currentImageIndex]}.webp`}
                 alt={`${project.name} - Image ${currentImageIndex + 1}`}
+                fill
                 className={styles.projectImage}
               />
 
@@ -137,6 +148,35 @@ export default function Project() {
             ))}
           </div>
         </section>
+
+        {(project.projectDemoLink || project.sourceCode) && (
+          <section className={styles.demoLink}>
+            <h2>Visit the Project</h2>
+
+            <div className={styles.demoLinks}>
+              {project.projectDemoLink && (
+                <a
+                  href={project.projectDemoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.projectDemoLink}
+                >
+                  Try Demo <FiExternalLink />
+                </a>
+              )}
+              {project.sourceCode && (
+                <a
+                  href={project.sourceCode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.projectDemoLink}
+                >
+                  Source Code <FaGithub />
+                </a>
+              )}
+            </div>
+          </section>
+        )}
       </div>
     </Container>
   );

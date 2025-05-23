@@ -19,11 +19,11 @@ export default function Profile() {
       <Contact />
       <Link
         className={s.download}
-        href="/resume.pdf"
+        href="/Nakasen_Puttacharoen_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Resume.pdf <BsDownload />{" "}
+        Download Resume <BsDownload />{" "}
       </Link>
     </div>
   );
