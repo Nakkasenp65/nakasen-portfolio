@@ -3,7 +3,7 @@ import s from "./page.module.css";
 import Collection from "@/component/Collection/Collection";
 import Container from "@/component/Container/Container";
 import AboutMe from "@/component/AboutMe/AboutMe";
-import Footer from "@/component/Footer/Footer";
+import Coursework from "@/component/Coursework/Coursework";
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000"), // use your real domain or localhost for dev
