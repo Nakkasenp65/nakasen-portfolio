@@ -1,5 +1,6 @@
 import Navbar from "@/component/Navbar/Navbar";
 import "./globals.css";
+import Footer from "@/component/Footer/Footer";
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000"), // use your real domain or localhost for dev
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="container">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

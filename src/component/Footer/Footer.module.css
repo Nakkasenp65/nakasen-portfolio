@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.25rem 0;
+  margin-top: 36px;
+  gap: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: black;
+  color: white;
+}
+
+.head {
+  text-align: center;
+}
+
+.link {
+  padding: 0.25rem;
+  background-color: var(--fg);
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 300ms;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+  transition: ease-in-out 100ms;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--bg);
+
+  transition: ease-in-out 100ms;
+}
+
+.link:hover {
+  scale: 1.1;
+  color: var(--primary);
+  transition: ease-in-out 300ms;
+}
