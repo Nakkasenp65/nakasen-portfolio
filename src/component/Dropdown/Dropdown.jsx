@@ -3,7 +3,7 @@ import { useState } from "react";
 import s from "./Dropdown.module.css";
 import { GoTriangleDown } from "react-icons/go";
 export default function Dropdown({ setSortOrder, sortOrder }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
