@@ -6,13 +6,13 @@
 
 .border {
   border-radius: 0.5rem;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   border: 1px solid var(--border);
 }
 
 .paragraph {
   display: flex;
-  text-indent: 24px;
+  text-indent: 1.5rem;
 }
 
 .indentation {
