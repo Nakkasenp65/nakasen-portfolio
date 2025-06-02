@@ -138,7 +138,7 @@ export default function Project() {
         <section className={styles.techSection}>
           <h2>
             <IoCodeSlash />
-            Technologies Used
+            Related
           </h2>
           <div className={styles.techStack}>
             {project.techStack.map((tech, index) => (

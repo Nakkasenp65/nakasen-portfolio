@@ -51,8 +51,10 @@ export default function Project({
       <p className={s.description}>{description}</p>
       <span className={s.techStack}>
         {techStack.map((tech, index) => {
-          const IconComponent = techIconMap[tech] || RiFirebaseFill; // Default icon
-          return <IconComponent className={s.techIcon} key={index} />;
+          const IconComponent = techIconMap[tech] || null; // Default icon
+          if (IconComponent !== null) {
+            return <IconComponent className={s.techIcon} key={index} />;
+          }
         })}
       </span>
       <div className={s.wrapperMore}>
