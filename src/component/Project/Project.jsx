@@ -1,7 +1,7 @@
 import s from "./Project.module.css";
 import { BiLogoFlask, BiLogoMongodb } from "react-icons/bi";
 import { RiFirebaseFill, RiNextjsFill } from "react-icons/ri";
-import { SiPython, SiHeroku, SiNetlify, SiOpencv } from "react-icons/si";
+import { SiPython, SiNetlify, SiOpencv } from "react-icons/si";
 import { IoArrowForward } from "react-icons/io5";
 import { FaLine } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
@@ -22,7 +22,6 @@ export default function Project({
     "Next.js (React)": RiNextjsFill,
     Python: SiPython,
     "Flask (REST API & Model)": BiLogoFlask,
-    Heroku: SiHeroku,
     Netlify: SiNetlify,
     LIFF: FaLine,
     MongoDB: BiLogoMongodb,

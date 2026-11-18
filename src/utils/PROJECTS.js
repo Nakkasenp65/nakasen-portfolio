@@ -11,7 +11,6 @@ export const PROJECTS = [
       "Full Stack",
       "Next.js (React)",
       "Flask (REST API & Model)",
-      "Heroku",
     ],
     projectDemoLink: "https://my-diagnose-frontend.vercel.app/",
     sourceCode: "https://github.com/Nakkasenp65/my-diagnose-backend.git",
